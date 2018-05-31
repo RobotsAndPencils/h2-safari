@@ -1,7 +1,7 @@
 use Mix.Config
 config :sample, SampleWeb.Endpoint,
   https: [
-    port: 443,
+    port: "443",
     certfile: "../../../../priv/server.pem",
     keyfile: "../../../../priv/server.key",
     versions: [:"tlsv1.2"],
@@ -49,7 +49,8 @@ config :sample, SampleWeb.Endpoint,
     honor_cipher_order: true,
     max_connections: :infinity
   ],
-  url: [scheme: "https", host: "h2-safari.rnp.io", port: 443],
-  force_ssl: [hsts: true]
+  url: [scheme: "https", host: "h2-safari.rnp.io", port: "443"],
+  force_ssl: [hsts: true],
+  secret_key_base: "gVtRsXqHrCisxxRdc1uh1f1/n0aMBo/BjxyfIs/tajLlGPBF6hR6Y3QbuVl5fWwB"
 
 config :logger, level: :debug
