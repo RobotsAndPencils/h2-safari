@@ -1,0 +1,23 @@
+<h1>H2 Test App for Safari</h1>
+
+<h2>What is this?</h2>
+
+<p>
+  Safari has a problem with certain H2 responses. It has issues with empty frames, or in cases where the size of the
+  frame is incorrectly reported.
+</p>
+
+<p>
+  The result is that any resource that served with one of these frames is lock up and never complete. For example the CSS file used for this page.
+</p>
+
+<p>
+Try these samples
+</p>
+
+<ul>
+  <li>This page will load blank: <a href="/test/one">Test One</a> (click on the page after you click the link)</li>
+  <li>This page will never load: <a href="/test/two">Test Two</a></li>
+</ul>
+
+

@@ -1,0 +1,21 @@
+[req]
+default_bits = 2048
+prompt = no
+default_md = sha256
+x509_extensions = v3_req
+distinguished_name = dn
+
+[dn]
+C = EX
+ST = Elixir
+L = Phoenix
+O = App
+emailAddress = email@phx.sh
+CN = test.phx.sh
+
+[v3_req]
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = test.phx.sh
+DNS.2 = *.phx.sh
