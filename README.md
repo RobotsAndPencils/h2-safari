@@ -30,15 +30,10 @@ To start the test Phoenix server:
 
 Now you can visit [`sample.phx.sh:4000`](https://sample.phx.sh:4000) from your browser.
 
-You will notice that in Safari, the following URLs work:
+The following pages have issues in Safari.
 
- - https://sample.phx.sh:4000/test/three
- - https://sample.phx.sh:4000/test/four
- - https://sample.phx.sh:4000/test/five
-
-but the following ones don't:
-
+ - https://sample.phx.sh:4000
  - https://sample.phx.sh:4000/test/one
  - https://sample.phx.sh:4000/test/two
 
-I haven't figured much else out, other than they fail.
+Likely due to empty frames.
