@@ -1,7 +1,7 @@
 use Mix.Config
 config :sample, SampleWeb.Endpoint,
   https: [
-    port: 4000,
+    port: 443,
     certfile: "../../../../priv/server.pem",
     keyfile: "../../../../priv/server.key",
     versions: [:"tlsv1.2"],
